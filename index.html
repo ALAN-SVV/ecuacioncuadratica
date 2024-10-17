@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecuacion</title>
+    <div id="include"></div>
+    #include <stdio.h>
+    #include <math.h>
 </head>
 
 <body>
     <h1>Ecuación Cuadrática </h1>
 
     <script>//comenzamos poniendo un script
+   
+
         var a = prompt("Ingrese valor de incognita a");
         var b = prompt("Ingrese valor de incognita b");
         var c = prompt("Ingrese valor de incognita c");//pedimos al usuario que ponga el valor de las incognitas
@@ -19,14 +24,14 @@
         var mul = a * c; //multiplicamos a y c
         var res = b2 - 4 * mul; //luego lo multuiplicamos por 4 de acuerdo a la formula y lo restamos por el resultado de b2
         var raiz = Math.sqrt(res); //sacamos la raiz de res
-        var a1 = 2 * a; 77 //multiplicamos la parte del denominador 
+        var a1 = 2 * a; //multiplicamos la parte del denominador 
         //Realizamos los dos casos 
-        var suma = b1 + raiz //sumamos el resultado de raiz y b1
-        var rest2 = b1 - raiz//Hacemos lo mismo pero con la resta
-        var x1 = suma / a1//luego dividimos el resultado 
-        var x2 = rest2 / a1
-        console.log("El valor de la ecuación x1 es: " + x1)//sacamos la respuesta y la colocamos en la consola
-        console.log("El valor de la ecuación x2 es: " + x2)
+        var suma = b1 + raiz; //sumamos el resultado de raiz y b1
+        var rest2 = b1 - raiz; //Hacemos lo mismo pero con la resta
+        var  x1 = suma / a1; //luego dividimos el resultado 
+        var  x2 = rest2 / a1; 
+        console.log("El valor de la ecuación x1 es: " + x1);//sacamos la respuesta y la colocamos en la consola
+        console.log("El valor de la ecuación x2 es: " + x2);
 
 
     </script>
